@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns:th="www.http.thymeleaf.org">
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+body {
+	background-color: cyan;
+}
+</style>
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<h2 style="text-align: center;">welcome to Virtual Private Network</h2>
+	</div>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning w-100">
+        <a class="navbar-brand" href="#"><img alt="" th:src="@{/img/vpn-icon.png}" style="width: 100%;height: 100px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/home}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/adminstration}">Marketing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/marketing}">Addmistration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/Training}">Training</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Marketing</a>
+                        <a class="dropdown-item" href="#">Training</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Administration</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white" type="button" th:href="@{/login}" data-toggle="modal" data-target="#myModal">Sign In</a>                  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger text-white" type="button" th:href="@{/redirectRegister}" data-toggle="modal" data-target="#myModal">Register</a>
+                </li>
+            </ul>
+        </div>
+
+            <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Customer Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <label class="sr-only" for="usrname">Username</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+
+                        <label class="sr-only" for="Password">Name</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                            </div>
+                            <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" th:href="@{/login}">Sign In</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+            
+
+    </nav>
+</div>	
+		   
+<div class="container-fluid">
+		<div class="row ">
+				<div class="col-12">
+				<h3 class="display-6 text-center mt-5 mb-2 bg-primary text-white">A virtual private network is a mechanism for creating a secure connection between
+				 a computing device and a computer network, or between two networks, using an insecure communication medium such as the public Internet..</br></h3>
+				</div>
+				
+				<div class="row justify-content-evenly pt-3 pb-3">
+				<div class="col-md-3 text-center mt-5">
+				
+				<h1><i class="bi bi-file-code-fill text-primary"></i></h1>
+				<h3>Addmistration</h3>
+				<p>This module monitors all the office operations and manages the staff details.</p>
+				</div>
+				
+				<div class="col-md-3 text-center mt-5">
+				<h1 class="text-center"><i class="bi bi-easel-fill text-danger"></i></h1>
+				<h3 class="mt-5">Marketing</h3>
+				<p>This module handles everything releated to the marketing operations of the software application</p>
+				</div>
+				<div class="col-md-3 text-center mt-5">
+				<h1 class="text-center"><i class="bi bi-calendar-range-fill text-success"></i></h1>
+				<h3>Training</h3>
+				<p>This modeule manages all the technical operations like<br>
+				software Testing,networking,call center and J2EE training. </p>
+				</div>
+				</div>
+				
+				<hr></hr> 
+						
+		<!-- footer  -->
+
+		<div class="row justify-content-evenly pt-3 pb-3 bg-dark text-white">
+		
+		<div class="col-md-3">
+		<em class="mt-4 bg-primary text-white h3">About Virtual private Network</em>
+		<p class="pt-3 bg-warning text-white ">
+		A virtual private network, or VPN, is an encrypted connection over the Internet from a device to a network. 
+		The encrypted connection helps ensure that sensitive data is safely transmitted. It prevents unauthorized people
+		 from eavesdropping on the traffic and allows the user to conduct work remotely.  VPN technology is widely used in 
+		 corporate environments.
+		</p>
+		
+		</div>
+		
+		<div class="col-md-3">
+		
+		<em class="mt-4 bg-warning text-white h5">Important Links</em></br></br>
+		<p>
+		<a th:href="@{/home}" class="link-light text-decoration-none bg-primary text-white">Home</a></br>
+		<a href="#" class="link-light text-decoration-none bg-primary text-white">About Us</a></br>
+		<a href="#" class="link-light text-decoration-none bg-primary text-white">Contact Us</a></br>
+		<a href="#" class="link-light text-decoration-none bg-primary text-white">Our Team</a></br>
+		<a href="#" class="link-light text-decoration-none bg-primary text-white">Our Client</a>
+		</p>
+		</div>
+		
+		<div class="col-md-3">
+		
+				<em class="mt-5 bg-primary text-white h3">Contact Us</em>
+				<p class="bg-danger text-white">MGM8+CXW, Hapur Rd, Mayur Vihar Dasna,</br> Dasna, Uttar Pradesh 201015</br>
+				<i class="bi bi-telephone-fill"></i>
+				7506762433
+				</p>
+		</div>
+		
+		
+		</div>
+
+			
+			
+		
+</div>
+</div>
+ 
+  </body>
+</html>
+					
+					
+</body>
+</html>

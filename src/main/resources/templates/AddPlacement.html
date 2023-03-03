@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Placement ERP</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+		<h1>Add Placement Form</h1>
+		<div class="container-fluid">
+		<div class="row justify-content-evenly ">
+		<div class="col-md-5 ">
+		<form action="/addPlacement" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Student Name</label>
+    <input type="text" class="form-control" name="StudName" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+  </div>
+  
+  <select class="form-select" aria-label="Default select example" name="placement">
+  <option selected>Select Placement</option>
+  <option value="1">J2EE</option>
+  <option value="2">Call Center</option>
+  <option value="3">Networking</option>
+</select>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Company</label>
+    <input type="text" class="form-control" name="company" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Contact Person</label>
+    <input type="text" class="form-control" name="person" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Placement Date</label>
+    <input type="date" class="form-control" name="placementDate" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+							</div></div></div>		
+</body>
+</html>

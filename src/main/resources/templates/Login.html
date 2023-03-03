@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+<title>Login</title>
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+				
+				
+				<div class="container-fluid mt-5 mb-5" >
+						<h1 class="text-center">CENTRALIZED MANAGEMENT SYSTEM</h1>		
+						<div class="row justify-content-evenly mt-5 mb-5">
+						
+									<div class="col-md-4">
+									
+										<form action="/Loginconfirm" method="post" style="float:center;">
+										<h1>Login Form</h1>
+										  
+  <select class="form-select" aria-label="Default select example" name="login">
+  <option selected value="Administrator">Administrator</option>
+  <option value="Client">Client</option>
+</select>										  <div class="mb-3 mt-5">
+										    <input type="password" class="form-control" id="exampleInputPassword1" name="pass" placeholder="your password" required="required">
+										  </div>
+										  <div class="text-center mb-5 mt-5">
+										  <button type="submit" class="btn btn-success" style="font-size:20px;border-radius:10px / 10px;">Login</button>
+										</div>
+										
+										</form>
+										</div>
+										
+														
+</div>				
+</div>
+</body>
+</html>
